@@ -1,3 +1,16 @@
+let calcFirstNum = 10;
+let calcOperator = "+";
+let calcSecondNum = 9;
+
+function operate(num1, operator, num2) {
+  return add(num1, num2);
+}
+
+console.log(
+  "operate function",
+  operate(calcFirstNum, calcOperator, calcSecondNum)
+);
+
 // Calc basic math operation functions
 
 function add(num1, num2) {
