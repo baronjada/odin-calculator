@@ -33,3 +33,15 @@ console.log("add function", add(2, 4));
 console.log("subtract function", subtract(10, 5));
 console.log("multiply function", multiply(10, 5));
 console.log("divide function", divide(10, 5));
+
+function updateCalcDisplay(event) {
+  console.log("CLICKED");
+}
+
+let calcDisplay = document.querySelector(".calc-display");
+console.log(calcDisplay);
+
+let calcButtons = document.querySelectorAll(".calc-buttons");
+calcButtons.forEach((button) => {
+  button.addEventListener("click", updateCalcDisplay);
+});
