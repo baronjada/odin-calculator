@@ -35,7 +35,7 @@ console.log("multiply function", multiply(10, 5));
 console.log("divide function", divide(10, 5));
 
 function updateCalcDisplay(event) {
-  console.log("CLICKED");
+  console.log(event.target.textContent);
 }
 
 let calcDisplay = document.querySelector(".calc-display");
