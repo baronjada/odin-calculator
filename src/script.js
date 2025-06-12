@@ -34,9 +34,9 @@ console.log("subtract function", subtract(10, 5));
 console.log("multiply function", multiply(10, 5));
 console.log("divide function", divide(10, 5));
 
-function updateCalcDisplay(event) {
-  let calcDisplay = document.querySelector(".calc-display");
+let calcDisplay = document.querySelector(".calc-display");
 
+function updateCalcDisplay(event) {
   calcDisplay.innerText = event.target.textContent;
 }
 
@@ -44,3 +44,10 @@ let calcButtons = document.querySelectorAll(".calc-buttons");
 calcButtons.forEach((button) => {
   button.addEventListener("click", updateCalcDisplay);
 });
+
+function clearCalcDisplay(event) {
+  calcDisplay.innerText = "";
+}
+
+let clearButton = document.querySelector(".clear-button");
+clearButton.addEventListener("click", clearCalcDisplay);
