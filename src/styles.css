@@ -14,6 +14,9 @@ body {
   margin: 120px auto;
   width: 400px;
   gap: 18px;
+  border: 1px solid black;
+  padding: 44px 22px;
+  border-radius: 16px;
 }
 
 .calc-display {
