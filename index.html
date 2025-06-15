@@ -3,38 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Odin Calc</title>
+    <title>Odin Calculator</title>
     <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
-    <div class="calc-container">
-      <div class="calc-display"></div>
-      <div class="clear-buttons-container">
-        <button class="clear-buttons" id="ac-button">AC</button>
-        <button class="clear-buttons" id="del-button">DEL</button>
+    <div class="calculator-grid">
+      <div class="output">
+        <div class="previous-operand">123 +</div>
+        <div class="current-operand">456</div>
       </div>
-
-      <div class="buttons-grid">
-        <button class="calc-buttons">1</button>
-        <button class="calc-buttons">2</button>
-        <button class="calc-buttons">3</button>
-        <button class="calc-buttons">+</button>
-
-        <button class="calc-buttons">4</button>
-        <button class="calc-buttons">5</button>
-        <button class="calc-buttons">6</button>
-        <button class="calc-buttons">-</button>
-
-        <button class="calc-buttons">7</button>
-        <button class="calc-buttons">8</button>
-        <button class="calc-buttons">9</button>
-        <button class="calc-buttons">*</button>
-
-        <button class="calc-buttons">.</button>
-        <button class="calc-buttons">0</button>
-        <button class="calc-buttons">=</button>
-        <button class="calc-buttons">/</button>
-      </div>
+      <button class="span-two">AC</button>
+      <button>DEL</button>
+      <button>÷</button>
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>*</button>
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>+</button>
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button>-</button>
+      <button>.</button>
+      <button>0</button>
+      <button class="span-two">=</button>
     </div>
     <script src="src/script.js"></script>
   </body>
