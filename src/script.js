@@ -1,10 +1,7 @@
+// Operation variables
 let calcFirstNum;
-let calcOperator;
 let calcSecondNum;
-
-function operate(num1, operator, num2) {
-  return add(num1, num2);
-}
+let calcOperator;
 
 // Calc basic math operation functions
 function add(num1, num2) {
@@ -23,25 +20,16 @@ function divide(num1, num2) {
   return num1 / num2;
 }
 
-// console.log("add function", add(2, 4));
-// console.log("subtract function", subtract(10, 5));
-// console.log("multiply function", multiply(10, 5));
-// console.log("divide function", divide(10, 5));
-
 let calcDisplay = document.querySelector(".calc-display");
 
 function updateCalcDisplay(event) {
-  calcFirstNum = event.target.textContent;
-  calcDisplay.innerText = calcFirstNum;
-  console.log("calc first num", calcFirstNum);
+  let operation = [calcFirstNum, calcOperator, calcSecondNum];
 
-  calcOperator = event.target.textContent;
-  calcDisplay.innerText = calcOperator;
-  console.log("calc operator", calcFirstNum);
+  let clickedButton = operation.map((button) => {
+    calcDisplay.innerText = event.target.textContent;
+  });
 
-  calcSecondNum = event.target.textContent;
-  calcDisplay.innerText = calcSecondNum;
-  console.log("calc second num", calcFirstNum);
+  console.log(clickedButton);
 }
 
 let calcButtons = document.querySelectorAll(".calc-buttons");
@@ -54,5 +42,5 @@ function clearCalcDisplay(event) {
   calcDisplay.innerText = "";
 }
 
-let clearButton = document.querySelector(".clear-button");
+let clearButton = document.querySelector("#ac-button");
 clearButton.addEventListener("click", clearCalcDisplay);
